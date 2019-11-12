@@ -8,6 +8,7 @@ class Category(models.Model):
     
 class Item(models.Model):
     name = models.CharField(max_length = 100)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=False)
     description = models.CharField(max_length = 255, blank = True, null = True)
 
     def __str__(self):
