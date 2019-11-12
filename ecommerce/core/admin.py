@@ -5,4 +5,6 @@ from .models import Item, Category
 class ItemAdmin(admin.ModelAdmin):
     list_display = ('name', 'category_name', 'category_price')
 
-admin.site.register(Category)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'price')
