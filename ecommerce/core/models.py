@@ -15,4 +15,11 @@ class Item(models.Model):
     def __str__(self):
         return self.name
 
+    def category_name(self):
+        return self.category.name
     
+    def category_price(self):
+        return self.category.price
+    
+    category_name.short_description = 'category'
+    category_price.short_description = 'price'
