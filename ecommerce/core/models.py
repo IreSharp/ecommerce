@@ -43,6 +43,6 @@ class Order(models.Model):
     order = models.BooleanField(default=False)
     
     def __str__(self):
-        return self.start_date
+        return self.user.get_username()
     
     
