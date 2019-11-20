@@ -5,3 +5,14 @@ body {
     padding: 3rem 1.5rem;
     text-align: center;
 }
+
+div .icon{
+    padding: 14px;
+    margin-bottom: 20px;
+    height: 80px;
+    background-color: red;
+}
+
+.home-text{
+    margin-top: 12%;
+}

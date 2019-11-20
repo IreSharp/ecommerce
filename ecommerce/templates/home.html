@@ -4,6 +4,15 @@
 
 {% block content %}
 
-    <h1>Home</h1>
+
+    <div class="row justify-content-around">
+        {% for category in categorys %}
+            <div class="col-5 icon">
+                <p class="home-text">{{ category.name }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
 
 {% endblock content %}
